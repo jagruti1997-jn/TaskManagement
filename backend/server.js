@@ -9,7 +9,17 @@ const User = require("./models/userSchema");
 const cors=require("cors")
 const app=express();
 app.use(bodyParser.json());
-app.use(cors());
+
+var whitelist=['http://localhost:3000','http://localhost:5000/posts/']
+const coreOptions={
+    origin:function(origin,callback){
+        var originWhitelisted=whitelist.indexOf(origin)!=-1;
+        callback(null,originWhitelisted);
+    }
+};
+
+app.use(cors(coreOptions))
+
 
 
 
