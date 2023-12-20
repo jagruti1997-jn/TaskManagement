@@ -109,8 +109,8 @@ useEffect(() => {
                 return  <div className='task'>
                   <div className='text'>{val.task}</div>
                   <div className='icons'>
-                  <button className='icon' onClick={()=>handleDelete(val._id)} ><i className='pi pi-file-edit'></i></button>
-                  <button className='icon'  onClick={()=>navigate(`/edit/${encodeURIComponent(people)}/${encodeURIComponent(token)}/${val._id}`,{state: val})} ><i className='pi pi-delete-left'></i></button>
+                  <button className='icon' onClick={()=>handleDelete(val._id)} ><i className='pi pi-delete-left'></i></button>
+                  <button className='icon'  onClick={()=>navigate(`/edit/${encodeURIComponent(people)}/${encodeURIComponent(token)}/${val._id}`,{state: val})} ><i className='pi pi-file-delete'></i></button>
                     </div>
                   
                 
