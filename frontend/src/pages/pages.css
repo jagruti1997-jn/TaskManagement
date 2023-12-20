@@ -1,0 +1,301 @@
+.header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px 10%;
+background-color: #000;
+}
+
+
+.appHeading{
+    background-color: rgb(50, 166, 211);
+   
+   
+}
+
+.list{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+li ,a{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+.logo{
+    cursor: pointer;
+    color: #edf0f1;
+}
+.nav_link{
+list-style: none;
+}
+.nav_link li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav_link li a{
+    transition: all 0.3s ease 0s;
+}
+.nav_link li a:hover{
+    color: #0088a9;
+    
+}
+
+
+/*login and signup css  */
+
+
+
+
+
+.loginContainer{
+    margin-top: 0%;
+    width: 100%;
+    /* padding: 10px; */
+    height: 100vh;
+    /* min-height:calc(100vh - 80px); */
+    background-color: rgb(62, 59, 59);
+    padding-top: 50px;
+}
+ .form_data{
+  
+    width: 600px;
+    margin:  auto;
+    padding:30px 10px;
+    box-shadow: 0 0 20px -10px whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(245, 245, 245, 0.845);
+}
+.form_heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form_data h1{
+    font-size: 34px;
+    color: #000;
+}
+.form_data p{
+    color: #000;
+    font-size: 15px;
+    margin-top:3px;
+}
+.form_data form{
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px 30px;
+}
+.form_data form .form_input input{
+    margin-left: 20px;
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #d4d0d0;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 16px;
+    margin-top: 9px;
+    font-size: 14px;
+}
+
+
+
+
+
+.form_data form .form_input label{
+    font-weight: 600;
+    font-size: 15px;
+}
+.form_input .two{
+    margin-right: 20px;
+    margin-left: 4px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.form_data form .form_input input:focus{
+    padding-right: 10px;
+    border:2px solid #000;
+}
+.form_data form .form_input input::placeholder{
+    color: gray;
+    letter-spacing: .5px;
+    font-size: 14px;
+}
+.form_input .showpass{
+    position: absolute;
+    right: 0;
+    top:1px;
+    padding: 7px 10px;
+    margin-right: 18px;
+    margin-top: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: whitesmoke;
+    background-color: gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+form .btn{
+    display:block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color:#000;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .3s;
+}
+form .btn:hover{
+    background-color: #97a1b1;
+    
+}
+.form_data form p{
+    text-align: center;
+    margin-top: 20px;
+}
+.form_data form a{
+    text-decoration: none;
+    color:#718096 ;
+    border-bottom: 2px solid #8694a8;
+}
+/*popup css*/
+
+.popupContainer {
+    background-color: #2a4365;
+    width: 300px;
+    margin: auto;
+    
+  }
+  
+  
+.innerpopup{
+justify-content: center;
+margin: auto;
+}
+
+
+
+/*  add task */
+
+
+.container{
+    
+    margin: auto;
+    padding: 0 1rem;
+}
+.container h1{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.top{
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+input{
+    border: none;
+    outline: none;
+    width: 400px;
+    padding: 0.5rem;
+    border-bottom: 1px solid #000;
+    font-size: 15px;
+}
+
+.add{
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+}
+.add:hover{
+    background-color: rgb(37, 35, 35);
+}
+
+
+/*task css */
+
+.task{
+    width: 50%;
+    position: relative;
+    /* margin-top: 1rem; */
+    background-color: #000;
+    color: #fff;
+    padding: 1.5rem 3rem;
+    border-radius: 5px;
+   margin: auto;
+   margin-top: 1rem;
+}
+
+.icons{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 20px;
+    display: flex;
+    gap: 0.5rem;
+}
+
+icon{
+    cursor: pointer;
+    font-size: 50px;
+   
+}
+
+
+/*edit page*/
+
+.editContainer{
+    padding-top: 40px;
+    width: 600px;
+    margin:  auto;
+    margin-top: 80px;
+    padding:30px 10px;
+    box-shadow: 0 0 20px -10px whitesmoke;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:black;
+
+}
+.editContainer h4{
+    color: wheat;
+    font-size: 20px;
+}
+
+.edit{
+    margin: 10px;
+}
+
+.edit input{
+    margin-right: 20px;
+}
+.edit button{
+    padding: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.edit button:hover{
+    background-color: rgb(43, 41, 41);
+    color: white;
+}
